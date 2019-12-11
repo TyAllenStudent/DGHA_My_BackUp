@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+        integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <link rel="icon" href="./assets/cropped-Logo-2.png">
+</head>
+
+<body id="negative">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+        <div class="container" id="menu">
+            <a class="navbar-brand" href="index.html"><span></span><img src="./assets/homeIcon.png" alt="homeIcon"></a>
+
+            <button class="navbar-toggler" type="button" name="Menu" data-toggle="collapse"
+                data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" data-toggle="collapse"
+                            data-target=".navbar-collapse" onclick="ShowContent('memberShip');">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" data-toggle="collapse"
+                            data-target=".navbar-collapse" onclick="ShowContent('donateContent');">Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" data-toggle="collapse"
+                            data-target=".navbar-collapse" onclick="ShowContent('infoContent');">Dog guide FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
+                            href="javascript:void(0)">
+                            Laws &amp; Regulations&nbsp;&nbsp;&nbsp;
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('fedContent');">Federal</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('vicContent');">Vic</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('NSWContent');">NSW</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('QLDContent');">QLD</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('NTContent');">NT</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('SAContent');">SA</a>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="collapse"
+                                data-target=".navbar-collapse" onclick="ShowContent('WAContent');">WA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" onclick="openNav()"
+                            href="javascript:void(0)">Accessibility Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bgImg">
+        <div id="mySidenav" class="sidenav">
+            <ul class="list-unstyled components">
+                <li style="font-size: 16px;">
+                    <i class="fa fa-universal-access" aria-hidden="true">
+                    </i>
+                </li>
+                <!-- <br><a href="javascript:void(0)" onclick="headingChange();">Heading</a> -->
+                <br>
+                <a href="javascript:void(0)" onclick="TextUp();">Text Size up</a>
+                <br>
+                <a href="javascript:void(0)" onclick="TextDown();">Text Size down</a>
+                <br>
+                <a href="javascript:void(0)" onclick="closeNav();">Close</a>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="container" id="mainContent" onclick="closeNav();">
+                <div id="google_translate_element"></div>
+                <div id="frontpage">
+                    <div>
+                        <img src="./assets/cropped-Logo-2.png" alt="Dog Guide Handlers Australia Logo" class="dghalogo">
+                    </div>
+                </div>
+                <div class="row" id="boxMenu">
+                    <div id="boxItems" class="columns is-centered">
+                        <div class="columns is-centered">
+                            <div class="column is-third" name="Membership">
+                                <p onclick="ShowContent('memberShip');" class="lawBox">Membership</p>
+                            </div>
+                            <div class="column is-third" name="Donations">
+                                <p onclick="ShowContent('donateContent');" class="lawBox">Donations</p>
+                            </div>
+                            <div class="column is-third" name="Info">
+                                <p onclick="ShowContent('infoContent');" class="lawBox">Dog guide FAQ</p>
+                            </div>
+                            <div class="column is-third" name="Federal Laws">
+                                <p onclick="ShowContent('fedContent');" class="lawBox">Federal Laws</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="lawBox" id="stateLawBox" onclick="ToggleStateBoxes();">State Laws &#x25bc;&#xfe0e;
+                            </p>
+                        </div>
+                        <div class="hidden">
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('vicContent');">VIC Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('NSWContent');">NSW Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('QLDContent');">QLD Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('SAContent');">SA Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('WAContent');">WA Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ShowContent('NTContent');"> NT Laws</p>
+                            <p class="lawBox lawBoxItem" onclick="ToggleStateBoxes();">Close &#x25B2;&#xfe0e;</p>
+                        </div>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </div>
+                <div id="infoContent">
+                    <div class="centerDiv">
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                        <br>
+                    </div>
+                    <h1 id="aboutHeading">
+                        About Dog Guides/Service Animals:
+                    </h1>
+                    <p>Dog Guides’s are assistance dogs trained to lead blind and visually impaired people around
+                        obstacles.</p>
+
+                    <p>
+                        Dog Guides give freedom and independence to people who are blind, have low vision or
+                        other impairments. They help people to get around safely and confidently. They also make
+                        wonderful companions.
+                    </p>
+
+                    <h2 id="etiquetteHeading">
+                        Dog Guide Etiquette 'Do's & Dont's:
+                        <br>
+                    </h2>
+                    <h3 class="subtleHeading">
+                        Please do:
+                    </h3>
+                    <p>
+                        <li>Speak directly to the person, not the dog, when offering assistance.</li>
+                        <br>
+                        <li>Keep pathways clear of obstacles and overhanging bushes trimmed to fence line.</li>
+                        <br>
+                        <li>Leave doors fully open or fully closed.</li>
+                        <br>
+                        <li>Position yourself slightly behind the right shoulder of a dog handler
+                            when walking with them.</li>
+                        <br>
+                        <li>If the handler is instructing their dog to "follow", walk about 1 metre ahead and continue
+                            talking to the handler.</li>
+                        <br>
+                        <li>Alert the person to any unusual behaviour or physical appearance
+                            of their dog.</li>
+                        <br>
+                        <li>Be calm and soft when interacting with a Dog Guide.</li>
+                        <br>
+                        <li>Offer assistance (if required) to a dog
+                            guide handler.</li>
+                    </p>
+
+                    <h3 id="subtleHeading">
+                        Please don’t:
+                    </h3>
+                    <p>
+                        <li>Distract, feed or touch a working Seeing Eye Dog (in
+                            harness) without the handler’s permission.</li>
+                        <br>
+                        <li>Discriminate against a person because they are
+                            using a dog guide.</li>
+                        <br>
+                        <li>Pet or talk to a Dog Guide without
+                            permission from the handler. If the handler
+                            declines to allow the interaction, respect
+                            the decision. Some dogs can easily develop
+                            the habit of seeking out the attention of
+                            others and losing focus on their partner.</li>
+                        <br>
+                        <li>“Flirt” with a Dog Guide; making
+                            kissing noises, whistling at, or trying
+                            to entice a dog over are all
+                            inappropriate actions and will not be
+                            appreciated by the handler.</li>
+                        <br>
+                        <li>Offer food or treats to a Dog
+                            Guide. Guide dogs are often trained
+                            using food as a motivational tool
+                            and positive reinforcement from the
+                            handler, and should only receive
+                            food from the handler. Dog Guide
+                            diets are also particular; feeding
+                            them people food can cause illness
+                            in the dog.</li>
+                        <br>
+                        <li>Allow pets, including
+                            other dogs, to approach a Dog
+                            Guide team for any reason,
+                            whether they are friendly or
+                            not. While many people may see
+                            this as an opportunity for dogs
+                            to just say hello to each other,
+                            it is distracting to the team
+                            and can ambush a blind handler.
+                            Guide dogs need to retain their
+                            training of ignoring other dogs
+                            and animals while working.</li>
+                    </p>
+                    <br>
+                    <div class="centerDiv">
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div id="donateContent">
+                    <div class="centerDiv">
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                        <br>
+                    </div>
+                    <h1 id="donationHeading">DGHA Donations</h1>
+                    <div>
+                        We appreciate your donations.
+                        <br>
+                        Donations are used for DGHA's continous mission Objectives providing peer support to dog guide
+                        handlers in Australia, while promoting
+                        advocacy and information for dog guide handlers throughout Australia.
+                        <br>
+                        <br>
+                    </div>
+                    <div class="centerDiv">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_donations" />
+                            <input type="hidden" name="business" value="marleymooke@gmail.com" />
+                            <input type="hidden" name="currency_code" value="AUD" />
+                            <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
+                                border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+                                alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1"
+                                height="1" />
+                        </form>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="centerDiv">
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentDivs" id="vicContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 class="legisHeadings" id="vicHeading">
+                            Victorian State Legislation
+                        </h1>
+                        <div class="stateContentText" id="vicContenttext">
+                            Victorian State Legislation gives access rights to Guide Dogs for the vision
+                            impaired
+                            and Hearing Dogs for the Hearing Impaired and dogs in training by approved
+                            organisations
+                            for those purposes.<br>
+
+                            DOMESTIC (FERAL AND NUISANCE) ANIMALS ACT 1994 - SECT 7<br>
+
+                            Exemptions for guide dogs<br><br>
+                            (1) A visually impaired person or hearing impaired person who keeps and uses a
+                            dog as a
+                            Dog Guide is not liable for an offence under this Act in respect of that dog,
+                            where, in
+                            acting in the manner which would constitute the offence, the dog was performing
+                            its
+                            functions as a Dog Guide.<br><br>
+
+                            (2) In the case of a dog which is owned by an organisation which trains guide
+                            dogs and
+                            which is approved by the Minister, the owner is not liable for an offence under
+                            this Act
+                            in respect of that dog, where in acting in the manner which would constitute the
+                            offence, the dog was being trained as a Dog Guide.<br><br>
+
+                            (3) Despite Part 2-<br><br>
+
+                            (a) a visually impaired person or hearing impaired person who keeps and uses a
+                            dog as a
+                            Dog Guide is not required to pay a fee for the registration of that dog; or
+                            (b) an organisation which trains guide dogs and which is approved by the
+                            Minister under
+                            subsection (2), is not required to pay a fee for the registration of a dog owned
+                            by the
+                            organisation which is being trained as a Dog Guide.<br><br>
+
+                            (4) Despite anything in any other Act or subordinate instrument a visually
+                            impaired
+                            person, hearing impaired person or person training a Dog Guide may, at all times
+                            and in
+                            all places, be accompanied by a dog kept and used, or trained by him or her as a
+                            guide
+                            dog.
+                        </div><br>
+                        <a href="index.html"><button name="home" class="backBtn">Back</button></a>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="WAContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="WAContenthead" class="stateContentHead">
+                            Western Australia Legislation
+                        </h1>
+                        <div class="stateContentText" id="WAContenttext">
+                            DOG ACT 1976 - SECT 8<br><br>
+
+                            8 . Assistance dogs<br><br>
+
+                            (1) In this section —
+                            assistance dog means a dog —<br><br>
+                            (a) that is trained or is being trained by a representative of an organisation
+                            that is
+                            prescribed for the purposes of this definition; or
+                            (b) that is trained or is being trained by an individual having the
+                            qualifications and
+                            experience prescribed for the purposes of this definition; or
+                            (c) that is assessed by a person mentioned in paragraph (a) or (b) as being
+                            competent to
+                            be an assistance dog; or
+                            (d) that is being assessed by a person mentioned in paragraph (a) or (b) to
+                            decide
+                            whether the dog is competent to be an assistance dog; or
+                            (e) that has been approved, for the purposes of a law of another State or a
+                            Territory,
+                            as a dog whose use can alleviate or manage an effect of a person’s disability or
+                            medical
+                            condition; or
+                            (f) that is approved by the CEO for the purposes of this definition.<br><br>
+
+                            (2) A person mentioned in subsection (3) —<br><br>
+                            (a) is entitled to be accompanied by an assistance dog, in any building or place
+                            open to
+                            or used by the public, for any purpose, or in any public transport; and
+                            (b) is not guilty of an offence by reason only that he or she takes that dog
+                            into or
+                            permits that dog to enter any building or place open to or used by the public or
+                            on any
+                            public transport.<br><br>
+
+                            (3) The persons to whom subsection (2) applies are as follows —
+                            (a) a person who has a disability or medical condition an effect of which can be
+                            alleviated or managed by the use of an assistance dog;
+                            (b) a person who is training or assessing an assistance dog and who is a
+                            representative
+                            of an organisation mentioned in the definition of assistance dog paragraph (a);
+                            (c) a person who is training or assessing an assistance dog and who is an
+                            individual
+                            mentioned in the definition of assistance dog paragraph (b);
+                            (d) an individual person who is approved by the CEO as a person to whom
+                            subsection (2)
+                            applies.<br><br>
+
+                            (4) The CEO may, on application, approve —<br><br>
+                            (a) an individual person to be a person to whom subsection (2) applies; or
+                            (b) a particular dog to be an assistance dog for the purposes of the definition
+                            in
+                            subsection (1).<br><br>
+
+                            (5) An application under subsection (4) must be made in a manner and form
+                            approved by
+                            the CEO and accompanied by —<br><br>
+                            (a) the prescribed fee, if any, for the application; and
+                            (b) each other thing that the CEO requires to accompany the application that
+                            will enable
+                            the CEO to make a decision.
+                            (6) The regulations may provide for the review by the State Administrative
+                            Tribunal of a
+                            decision of the CEO on an application under subsection (4).
+                            (7) This section applies despite any other provision of this Act or other
+                            written law.
+                        </div><br>
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+
+                        <div class="spacerDiv"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="SAContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="SAContenthead" class="stateContentHead">
+                            South Australia State Legislation
+                        </h1>
+                        <div id="SAContenttext" class="stateContentText">
+                            South Australia has legislation covering guide, hearing and disability dogs, all
+                            of
+                            which must be approved and accredited by the dog and cat management
+                            board.<br><br>
+
+                            21A—Accreditation of disability dogs, guide dogs etc<br><br>
+
+                            (1) The Board may, on application, accredit a dog, or renew the accreditation of
+                            a dog,
+                            as—<br><br>
+                            (a) a disability dog; or
+                            (b) a Dog Guide; or
+                            (c) a hearing dog.<br><br>
+
+                            (2) An application for accreditation must—<br><br>
+
+                            (a) be made to the Board in the manner and form approved by the Board; and
+                            (b) be accompanied by the fee fixed by the Board.<br><br>
+
+                            (3) An applicant must provide the Board with any information required by the
+                            Board for
+                            the purpose of determining the application.<br><br>
+
+                            (4) Accreditation of a dog remains in force for the life of the dog unless it is
+                            earlier
+                            revoked by the Board or surrendered by the owner of the dog.<br><br>
+
+                            (5) The Board must maintain a register of dogs accredited under this section by
+                            the
+                            Board (which may be kept in the form of a computer record) that is to be readily
+                            available for public inspection without fee.<br><br>
+
+                            (6) The Board may only revoke the accreditation of a dog if the Board is
+                            satisfied
+                            that—<br><br>
+
+                            (a) the dog's ill-health, injury or advanced age prevents the dog from carrying
+                            out its
+                            functions as a disability dog, Dog Guide or hearing dog (as the case may be); or
+                            (b) the dog is temperamentally unsuitable to continue to be accredited as a
+                            disability
+                            dog, Dog Guide or hearing dog (as the case may be); or
+                            (c) the owner of the dog is unable to maintain effective control of the dog
+                            (whether by
+                            command or by means of physical restraint).<br><br>
+
+                            81—Disability dogs, guide dogs etc<br><br>
+
+                            (1) Despite this Act or any other Act—<br><br>
+
+                            (a) a person who is wholly or partially blind or deaf, or otherwise disabled, is
+                            entitled to be accompanied by an accredited disability dog, Dog Guide or hearing
+                            dog in
+                            a public place or public passenger vehicle; and
+                            (b) the occupier or person in charge of a public place or public passenger
+                            vehicle must
+                            not refuse access to the place or vehicle to a person who is wholly or partially
+                            blind
+                            or deaf, or otherwise disabled, on the ground that the person is accompanied by
+                            a
+                            disability dog, Dog Guide or hearing dog.
+                            Maximum penalty: $250.<br><br>
+
+                            (2) A person must not claim that a dog is a disability dog, Dog Guide or hearing
+                            dog
+                            unless the dog is accredited as such by the Board under section 21A.
+                            Maximum penalty: $250.<br><br>
+
+                            Assessment Criteria for Disability Dogs.<br><br>
+
+                            Any person wishing to apply for disability dog accreditation must prove to the
+                            Dog and
+                            Cat Management Board that they cannot carry out functions as an able bodied
+                            person
+                            without the aid of a dog. For example, the dog picks up dropped items, empties
+                            washing
+                            machines, gives warning when smoke alarms sound.<br><br>
+                            • The dog must not be a prescribed breed. (Japanese Tosa, Filo
+                            Braziliero, Dogo Argentino, Presa Canario, American Pit Bull).<br><br>
+                            • The dog must be of sound temperament. If this is in doubt, then a
+                            recognised temperament test e.g. National Consultative Committee for Animal
+                            Welfare or
+                            SAFER, should be undertaken by a person familiar with the test.<br><br>
+                            • Public Access Test – approximately 4 hours (cost $120.00 per hour, $250 of
+                            which is
+                            covered by the Board)<br><br>
+                            • The dog must observe any conditions if so specified by the Dog and Cat
+                            Management
+                            Board.<br><br>
+
+                            Evidence Required<br><br>
+                            • Person must provide the Board with a letter from both a General
+                            Practitioner and a Specialist who are treating the person, stating both the
+                            illness and
+                            details of the disability and whether or not a dog would assist with activities
+                            of daily
+                            living.<br><br>
+                            • Dog must be assessed for its temperament and capabilities by the
+                            accredited trainer of the Dog and Cat Management Board.<br><br>
+                        </div><br>
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="NTContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="NTContenthead" class="stateContentHead">
+                            Northern Territory Legislation
+                        </h1>
+                        <div id="NTContenttext" class="stateContentText">
+                            The Anti-Discrimination Act covers discrimination against guide, hearing and
+                            mobility
+                            dogs.<br><br>
+
+                            21. Discrimination by refusing to allow Dog Guide, &c.<br><br>
+
+                            (1) For the purposes of this Act, a person discriminates on the ground of
+                            impairment
+                            against a person with a visual, hearing or mobility impairment if the person
+                            treats the
+                            person with the impairment less favourably because the person has a guide
+                            dog.<br><br>
+
+                            (2) Subsection (1) applies notwithstanding that it is the practice of the person
+                            to
+                            treat less favourably other persons who have dogs.<br><br>
+
+                            (3) Nothing in this section shall limit the operation of section 20 in relation
+                            to
+                            discrimination on the ground of impairment.<br><br>
+
+                            (4) This section does not affect the liability of a person with a Dog Guide for
+                            any
+                            damage caused by the Dog Guide.<br><br>
+
+
+                            The Northern Territory does not have a specific animal control act or Dog Guide
+                            act. The
+                            area around Alice Springs is covered by the Alice Springs Animal Control By-Law.
+                            This
+                            law provides exemptions from the normal dog requirements for guide, hearing and
+                            therapy
+                            dogs.<br><br>
+
+                            49. Exemptions
+                            The Council may, by resolution, exempt –<br><br>
+
+                            (a) a Dog Guide;
+                            (b) a hearing dog;
+                            (c) a therapy dog;<br><br>
+
+                            "Dog Guide" means a dog, trained by an approved Dog Guide association, used as a
+                            guide
+                            by a person who is wholly or partially blind;<br><br>
+                            "hearing dog" means a dog, certified as a hearing dog by an approved hearing dog
+                            association, used as an aid by a person who is wholly or partially deaf;<br><br>
+                            "therapy dog" means a dog, certified by an approved training institution, that
+                            is used
+                            for purposes of therapy by a person who is wholly or partially
+                            incapacitated;<br><br>
+                        </div><br>
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="NSWContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="NSWContenthead" class="stateContentHead">
+                            New South Wales State Legislation
+                        </h1>
+                        <div id="NSWContenttext" class="stateContentText">
+                            In NSW laws are the same as the federal ones in regards for definitions of
+                            assistance
+                            animals and also for disability. State laws really reinforce those rights and
+                            fine
+                            people for refusing people access, but also grant public access rights to all
+                            such dogs
+                            in training. All assistance animals in NSW are eligible for free registration.
+                            Legislation is in various different forms:<br><br>
+
+                            The Companion Animals Act 1998<br><br>
+                            Person with a disability entitled to be accompanied by assistance animal
+                            59 Person with a disability entitled to be accompanied by assistance animal
+                            (1) A person with a disability is entitled to be accompanied by an assistance
+                            animal
+                            being used bonafide by the person to assist the person, into or onto any
+                            building or
+                            place open to or used by the public or on any public transport.<br><br>
+                            (2) The person is not guilty of an offence merely because the person takes the
+                            animal
+                            into or onto or permits the animal to enter or be in or on any such building or
+                            place or
+                            any public transport while the person is using the animal bonafide to assist the
+                            person.<br><br>
+                            (3) This section applies despite the provisions of any other Act or instrument
+                            made
+                            under an Act.<br><br>
+
+                            COMPANION ANIMALS ACT 1998 - SECT 60<br><br>
+                            Assistance animal not to be denied entry
+                            60 Assistance animal not to be denied entry<br><br>
+
+                            (1) An occupier or person in charge or control of a building or place open to or
+                            used by
+                            the public or a person in charge or control of any public transport must not,
+                            without
+                            reasonable cause, refuse to permit a person to take an assistance animal into or
+                            onto,
+                            or while accompanied by an assistance animal to enter or be in or on, that
+                            building or
+                            place or public transport if the person has a disability and is using the animal
+                            bonafide to assist him or her.<br><br>
+                            Maximum penalty: 8 penalty units.<br><br>
+                            (2) A person prosecuted for a contravention of this section is not entitled to
+                            any
+                            defence to that prosecution that relies for its efficacy on the presence of the
+                            animal
+                            concerned.<br><br>
+
+                            COMPANION ANIMALS ACT 1998 - SECT 61<br><br>
+                            Unlawful to impose charge for entry of assistance animal
+                            61 Unlawful to impose charge for entry of assistance animal
+
+                            (1) An occupier or person in charge or control of a building or place open to or
+                            used by
+                            the public or a person in charge or control of any public transport must not
+                            impose a
+                            charge on or in respect of a person with a disability who is accompanied by an
+                            assistance animal used bona fide by the person to assist him or her and who is
+                            taking
+                            the animal into or onto, or is entering or is in or on, that building or place
+                            or public
+                            transport, unless the charge would have been imposed on or in respect of that
+                            person if
+                            the person had not been accompanied by the animal.
+                            Maximum penalty: 8 penalty units.<br><br>
+                            (2) A person ( "the defendant") does not contravene subsection (1) by imposing a
+                            charge
+                            in respect of an animal accompanying a person if the defendant proves
+                            that:<br><br>
+                            (a) in the circumstances it was reasonably necessary for the defendant to supply
+                            accommodation for the animal additional to that supplied for the person, that
+                            the charge
+                            was imposed for that additional accommodation, and that the charge was a
+                            reasonable
+                            charge in the circumstances, or<br><br>
+                            (b) the defendant reasonably incurred additional expense because of the presence
+                            of the
+                            animal, that the charge imposed was to recompense the defendant for that
+                            additional
+                            expense, and that the charge was a reasonable charge in the
+                            circumstances.<br><br>
+                            (3) When a person is convicted of an offence under this section in respect of a
+                            charge
+                            imposed on another person, the court may, upon application made by that other
+                            person,
+                            order the convicted person to refund the amount of that charge.<br><br>
+                            (4) The court’s order operates as an order for the payment of money under the
+                            Civil
+                            Procedure Act 2005 and is enforceable as such an order under that Act. The order
+                            can for
+                            the purpose of enforcing it be entered in the records of the court exercising
+                            jurisdiction under the Civil Procedure Act 2005 at the place where the order was
+                            made,
+                            in such manner as may be prescribed by rules made under that Act.<br><br>
+
+                            Anti Discrimination Act 1977<br><br>
+                            What constitutes discrimination on the ground of disability
+                            49B What constitutes discrimination on the ground of disability<br><br>
+                            (3) For the purposes of, but without limiting, this section, the fact that a
+                            person who
+                            has a disability of or relating to vision, hearing or mobility has, or may be
+                            accompanied by, a dog which assists the person in respect of that disability, is
+                            taken
+                            to be a characteristic that appertains generally to persons who have that
+                            disability,
+                            but nothing in this Act affects the liability of any such person for any injury,
+                            loss or
+                            damage caused by the dog.<br><br>
+
+                            Passenger Transport Act 1990, and Passenger Transport Regulations 2007<br><br>
+                            (1) A passenger must not take into or on any public passenger vehicle any dog,
+                            cat, bird
+                            or other animal:<br><br>
+                            (a) in the case of a vehicle other than a bus or ferry-unless the animal is
+                            suitably
+                            confined in a box, basket or other container, and<br><br>
+                            (b) in the case of a bus or ferry-except with the permission of, and in the
+                            manner
+                            permitted by, the driver of the bus or the ferry master.
+                            Maximum penalty: 5 penalty units.<br><br>
+                            (2) Sub-clause (1) does not apply to an assistance animal or an assistance
+                            animal in
+                            training.<br><br>
+
+                            Rail Safety Act 1993, and Rail Safety Regulations 2003
+                            Animals on trains or railway land
+                            46 Animals on trains or railway land<br><br>
+
+                            (1) A person must not take an animal onto a train intended for the conveyance of
+                            passengers, or have an animal in his or her charge on such a train, except under
+                            the
+                            conditions imposed by the accredited person for the relevant railway for the
+                            conveyance
+                            of the animal.
+                            Maximum penalty: 5 penalty units.<br><br>
+                            (2) A person must not allow an animal under the person’s care or control on, or
+                            to stray
+                            onto, railway land, except as provided by sub-clause (1).
+                            Maximum penalty: 5 penalty units.<br><br>
+                            (3) This clause does not apply to:<br><br>
+                            (a) an assistance animal accompanying a person with a disability, or
+                            (b) an assistance animal in training.
+                        </div><br>
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="QLDContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="QLDContenthead" class="stateContentHead">
+                            Queensland State Legislation
+                        </h1>
+                        <div id="QLDContenttext" class="stateContentText">
+                            The Guide, Hearing and Assistance Dogs Act 2009 came into effect on 1 July
+                            2009.<br><br>
+
+                            The new legislation ensures that every person who relies on a guide, hearing or
+                            assistance dog has the same access rights as others to public places and public
+                            passenger vehicles. This includes cafes, restaurants, pubs, clubs, sports
+                            venues, taxis
+                            and buses.<br><br>
+
+                            From 1 September 2009, significant penalties will apply to individuals and
+                            corporations
+                            for breaches of the Act.<br><br>
+
+                            Includes information for assistance dog owners on getting the special government
+                            ID, and
+                            for trainers on becoming an approved trainer and the process for certifying
+                            trained
+                            dogs.
+                        </div><br>
+                        <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                        <div class="spacerDiv"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="contentDivs" id="fedContent">
+                <span style="font-size:16px;">
+                    <div class="container-content">&#8203;
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                        <h1 id="fedContenthead" class="stateContentHead">
+                            Federal Legislation
+                        </h1>
+                        <div id="fedContenttext" class="stateContentText">
+                            Disability discrimination occurs when a person is treated less favourably, or not given
+                            the same opportunities as others in a similar situation because of their disability.
+                            <br>
+                            <br>
+
+                            The Disability Discrimination Act 1992 (DDA) makes it unlawful to discriminate against a
+                            person, in many areas of public life, including employment, education, getting or using
+                            services, renting or buying a house or unit, and accessing public places, because of
+                            their disability.
+                            <br>
+                            <br>
+
+                            The DDA covers people who have temporary and permanent disabilities; physical,
+                            intellectual, sensory, neurological, learning and psychosocial disabilities, diseases or
+                            illnesses, physical disfigurement, medical conditions, and work-related injuries.
+                            <br>
+                            <br>
+
+                            It extends to disabilities that people have had in the past and potential future
+                            disabilities, as well as disabilities that people are assumed to have.
+                            <br>
+                            <br>
+
+                            The DDA protects people with disabilities who may be discriminated against because they
+                            are accompanied by an assistant, interpreter or reader; they are accompanied by a
+                            trained animal, such as a guide, hearing or assistance dog; or they use equipment or an
+                            aid, such as a wheelchair or a hearing aid.
+                            <br>
+                        </div><br>
+                        <div class="centerDiv">
+                            <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                            <div class="spacerDiv"></div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="memberShip" class="container">
+                <div class="centerDiv">
+                    <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                    <div class="spacerDiv"></div>
+                </div>
+                <h1 id="memberHeading" class="stateContentHead">
+                    Join DGHA and become a member</h1>
+                <div id="membershipContent">
+                    Membership is available for anyone to join and support the purpose of our mission and community
+                    goals but is split between two different
+                    options.<br>
+                    <br>
+                    <li>
+                        <a>Full Membership: $20.00. Any Australian who is blind or vision impaired, and who is a Dog
+                            Guide Handler.</a>
+                        <!-- <button class="myBtn">Select</button> -->
+                    </li>
+                    <li>
+                        <a> Associate Membership: $10.00. Any other person who is sighted or vision impaired, who
+                            supports DGHA.</a>
+                        <!-- <button class="myBtn">Select</button> -->
+                    </li>
+                    <br>
+                    The cost of membership to join DGHA is a once only payment, for lifetime membership.<br>
+                    <a>Membership: $20.00.</a><br>
+                    Associate Membership: $10.00.
+                    <br>
+                    After filling in the form below and submitting you will be redirected to our Paypal for the
+                    admission cost and finalization of the membership process.
+                </div>
+
+                <div class="accordion" id="accordionForm">
+                    <h5 class="mb-0">
+                        <button id="fullMemBtn" class="memBtn" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Sign up as a Full Member &#x25bc;&#xfe0e;
+                        </button>
+                    </h5>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionForm">
+                        <div id=formDiv class="formContainer">
+                            <form name="memberForm" id="memberForm"
+                                action="https://dghaapi.azurewebsites.net/api/members" method="POST">
+                                <br>
+                                <fieldset>
+
+                                    <legend id="memberFormhead">
+                                        Membership Sign-Up:</legend>
+                                    <p>* = Required information</p>
+
+                                    <!-- Member type is sent here with form -->
+                                    <input type="hidden" name="MemberType" id="fullmember" value="fullmember" required>
+
+                                    <label for="title">Title *</label><br>
+
+                                    <input type="name" name="Title" id="title" maxlength="10" required><br>
+
+                                    <label for="fname">First Name *</label><br>
+
+                                    <input type="name" name="firstname" id="fname" autocomplete="given-name"
+                                        maxlength="40" required> <br>
+
+                                    <label for="lname">Last Name *</label><br>
+                                    <input type="name" name="lastname" id="lname" autocomplete="family-name"
+                                        maxlength="40" required> <br>
+
+                                    <label for="dob">Date of Birth (dd/mm/yyyy) *</label><br>
+                                    <input style="min-height: 28px;" placeholder="2000-01-01" type="date" name="dob"
+                                        id="dob" autocomplete="bday" maxlength="10" required><br>
+
+                                    <label for="address">Address *</label><br>
+                                    <input type="text" name="address" id="address" autocomplete="street-address"
+                                        maxlength="70" required><br>
+
+                                    <label for="city">Suburb *</label><br>
+                                    <input type="city" name="suburb" id="city" autocomplete="address-level2"
+                                        maxlength="70" required><br>
+
+                                    <label for="state">State or Territory *</label><br>
+                                    <select type="state" name="state" id="state" autocomplete="address-level1" required>
+                                        <option value="ACT" name="ACT">ACT</option>
+                                        <option value="NSW" name="NSW">NSW</option>
+                                        <option value="NT" name="NT">NT</option>
+                                        <option value="QLD" name="QLD">QLD</option>
+                                        <option value="SA" name="SA">SA</option>
+                                        <option value="TAS" name="TAS">TAS</option>
+                                        <option value="VIC" name="VIC">VIC</option>
+                                        <option value="WA" name="WA">WA</option>
+                                    </select>
+                                    <br>
+                                    <label for="postcode">Postcode *</label><br>
+                                    <input name="postcode" id="postcode" autocomplete="postal-code" maxlength="4"
+                                        required pattern="[1-9][0-9][0-9][0-9]"><br>
+                                    <label for="tel">Phone Number *</label><br>
+                                    <input type="tel" name="phonenumber" id="tel" autocomplete="tel" required
+                                        pattern="^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{1}( |-){0,1}[0-9]{3}$"><br>
+                                    <label for="email">Email Address *</label><br>
+                                    <input type="email" name="email" id="email" autocomplete="email" required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"><br>
+                                    <label for="dogtraining">Your dog is trained for:</label><br>
+                                    <input type="radio" name="dogtraining" id="dogBlind"
+                                        value="Dog Guide used for mobility by people who are blind or vision impaired"
+                                        required>
+                                    <label for="dogtraining">Dog Guide used for mobility by people who are blind or
+                                        vision impaired</label> <br>
+                                    <input type="radio" name="dogtraining" id="dogPuppy"
+                                        value="Puppy Raiser involved in a training program">
+                                    <label for="dogtraining">Puppy Raiser involved in a training program</label>
+                                    <br>
+                                    <input type="radio" name="dogtraining" id="dogNA" value="Not applicable">
+                                    <label for="dogtraining">Not applicable</label> <br>
+                                    <label for="dogname">Name of dog guide or puppy</label><br>
+                                    <input type="text" name="dogname" id="dogname" autocomplete="off"
+                                        maxlength="40"><br>
+                                    <label for="dogbreed">Breed of dog</label><br>
+                                    <input type="text" name="dogbreed" id="dogbreed" autocomplete="off"
+                                        maxlength="40"><br>
+                                    <label for="trainingprovider">Training provider or organisation</label><br>
+                                    <input type="text" name="trainingprovider" id="trainingprovider" autocomplete="off"
+                                        maxlength="100"><br>
+                                    <label for="dogalttraining">If your dog is also trained to assist you with a
+                                        disbility
+                                        other than
+                                        blindness or vision impairment.<br> Please indicate what the dog is trained
+                                        for?</label><br>
+                                    <input type="text" name="dogtraining" id="dogalttraining" autocomplete="off"
+                                        maxlength="100"><br>
+                                    <label for="workforblindnessorg">Do you work for a Dog Guide or other blindness
+                                        organisation *</label>
+                                    <br>
+                                    <input type="radio" name="orgworker" id="workforblindnessorgyes" value="yes"
+                                        required>
+                                    <label for="workforblindnessorgyes">Yes</label>
+                                    <br>
+                                    <input type="radio" name="orgworker" id="workforblindnessorgno" value="no" required>
+                                    <label for="workforblindnessorgno">No</label><br>
+                                    <label>If yes, Name of Dog Guide or Assistance dog provider, or other
+                                        blindess organisation?</label><br>
+                                    <input type="text" name="orgname" id="workforblindnessorg-name" autocomplete="off"
+                                        maxlength="100"><br>
+                                    <label for="workforblindnessorg-position">Position or Title</label><br>
+                                    <input type="text" name="orgposition" id="workforblindnessorg-position"
+                                        autocomplete="off" maxlength="100">
+                                    <br>
+                                    <div class="spacerDiv"></div>
+                                    <input type="submit" class="myBtn" value="Submit">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+
+                    <h5 class="mb-0">
+                        <button id="assMemBtn" class="memBtn" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Sign up as an Associate Member &#x25bc;&#xfe0e;
+                        </button>
+                    </h5>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionForm">
+                        <div id=formDiv class="formContainer">
+                            <form name="memberForm" id="memberForm"
+                                action="https://dghaapi.azurewebsites.net/api/members" method="POST" style:>
+                                <br>
+                                <fieldset>
+                                    <legend id="memberFormhead">
+                                        Membership Sign-Up:</legend>
+                                    <p>* = Required.</p>
+
+                                    <!-- Member type is sent here with form -->
+                                    <input type="hidden" name="MemberType" id="associatemember" value="fullmember"
+                                        required>
+
+                                    <label for="title">Title *</label><br>
+
+                                    <input type="name" name="Title" id="title" maxlength="10" required><br>
+
+                                    <label for="fname">First Name *</label><br>
+
+                                    <input type="name" name="firstname" id="fname" autocomplete="given-name"
+                                        maxlength="40" required> <br>
+
+                                    <label for="lname">Last Name *</label><br>
+                                    <input type="name" name="lastname" id="lname" autocomplete="family-name"
+                                        maxlength="40" required> <br>
+
+                                    <label for="dob">Date of Birth (dd/mm/yyyy) *</label><br>
+                                    <input style="min-height: 28px;" placeholder="2000-01-01" type="date" name="dob"
+                                        id="dob" autocomplete="bday" maxlength="10" required><br>
+
+                                    <label for="address">Address *</label><br>
+                                    <input type="text" name="address" id="address" autocomplete="street-address"
+                                        maxlength="70" required><br>
+
+                                    <label for="city">Suburb *</label><br>
+                                    <input type="city" name="suburb" id="city" autocomplete="address-level2"
+                                        maxlength="70" required><br>
+
+                                    <label for="state">State or Territory *</label><br>
+                                    <select type="state" name="state" id="state" autocomplete="address-level1" required>
+                                        <option value="ACT" name="ACT">ACT</option>
+                                        <option value="NSW" name="NSW">NSW</option>
+                                        <option value="NT" name="NT">NT</option>
+                                        <option value="QLD" name="QLD">QLD</option>
+                                        <option value="SA" name="SA">SA</option>
+                                        <option value="TAS" name="TAS">TAS</option>
+                                        <option value="VIC" name="VIC">VIC</option>
+                                        <option value="WA" name="WA">WA</option>
+                                    </select>
+                                    <br>
+
+                                    <label for="postcode">Postcode *</label><br>
+                                    <input name="postcode" id="postcode" autocomplete="postal-code" maxlength="4"
+                                        required pattern="[1-9][0-9][0-9][0-9]"><br>
+
+                                    <label for="tel">Phone Number *</label><br>
+                                    <input type="tel" name="phonenumber" id="tel" autocomplete="tel" required
+                                        pattern="^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{1}( |-){0,1}[0-9]{3}$"><br>
+                                    <label for="email">Email Address *</label><br>
+                                    <input type="email" name="email" id="email" autocomplete="email" required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"><br>
+                                    <br>
+                                    <div class="spacerDiv"></div>
+                                    <input type="submit" class="myBtn" value="Submit">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fundsTransferText">
+                    <br>
+                    <h3><u>Pay using Funds Transfer</u></h3>
+                    <p> For direct deposit into the DGHA bank account please use these details:</p>
+                    <p>Account Name: Dog Guide Handlers Australia.<br>
+                        Bank: ANZ Bank<br>
+                        BSB Number: 016484<br>
+                        Account Number: 268410756</p>
+                    <p>Payment description for electronic funds payments:</p>
+                    <p>To identify your payment and ensure that we enter it in our database
+                        correctly, please make sure to include the descriptor “Mship” and the
+                        initial of your first name, and your full last name in the payee
+                        description provided by your bank. If your bank does not allow this
+                        type of descriptor, please use your phone number instead.</p>
+                    <p>If you have any problems, please don’t hesitate to <a
+                            href="http://dgha.org.au/dgha/contact//">contact us</a></p>
+                </div>
+                <div class="centerDiv">
+                    <a href="index.html"><button class="backBtn" name="home">Back</button></a>
+                    <div class="spacerDiv"></div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column">
+                            <a href="https://www.paypal.com/au/home">
+                                <i id="paypalIcon" class="fab fa-paypal" alt="paypal" name="paypal"></i>
+                            </a>
+                        </div>
+                        <div class="column">
+                        <a href="https://www.facebook.com/groups/DogGuideHandlersAustralia">
+                            <i style="font-size: 4em; color: #3b5998; cursor: pointer;" class="fab fa-facebook"
+                                alt="facebook" name="facebook"></i>
+                        </a>
+                        </div>
+                        <div class="column">
+                            <a href="https://twitter.com/DGHAustralia">
+                                <i style="font-size: 4em; color: #1da1f2; cursor: pointer;" class="fab fa-twitter"
+                                    alt="twitter" name="twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        Website developed by Swinburne University in collaboration with DGHA.
+                    </div>
+                </div>
+        </div>
+        </footer>
+</body>
+
+</html>
